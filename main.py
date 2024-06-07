@@ -10,11 +10,13 @@ import utils.network as net
 import utils.util as ut
 import yaml
 
+
 def parse_args():
     parser = argparse.ArgumentParser(description='Training and validation parameters.')
     parser.add_argument('--config', help='config file path')
     args = parser.parse_args()
     return args
+
 
 args = parse_args()
 with open(args.config, "r") as file:
